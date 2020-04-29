@@ -1,5 +1,4 @@
 import java.util.ArrayList;
-import java.util.List;
 
 public class Main {
 
@@ -15,6 +14,15 @@ public class Main {
 
 
         System.out.format("%s  :  %s  :  %s", "Me", "NotMe", "AnotherShit");
+
+
+        int a = 5;
+
+        new Thread(() ->{
+            for(int i = 0; i < 1000000; i++){
+                System.out.println(a);
+            }
+        }).start();
 
 
 
